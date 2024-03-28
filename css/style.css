@@ -3326,9 +3326,23 @@ dl.hiw {
   .cta .cta-info {
     width: 100%; } }
 
-/*# sourceMappingURL=style.css.map */
-
+/*# sourceMappingURL=style.css.map *//* Default styles */
 .navbar-brand img {
-        margin-top: -20px; /* Adjust this value as needed */
-    }
+    margin-top: -20px; /* Adjust this value as needed */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar-brand img {
+        margin-top: -10px; /* Adjust this value for smaller screens */
+        min-height: 40px; /* Set a minimum height for the image */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-brand img {
+        margin-top: -5px; /* Adjust this value for even smaller screens */
+        min-height: 30px; /* Set a minimum height for the image */
+    }
+}
